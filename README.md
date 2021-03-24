@@ -2,3 +2,4 @@
 ## Podnaslov
 ### Podpodnaslov
 V tem repozitoriju se nahaja projekt, ki ga delamo pri ROM-u.
+Na domačem računalniku spremenimo datoteko.
