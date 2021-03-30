@@ -1,5 +1,2 @@
-# ROM-projekt2
-## Podnaslov
-### Podpodnaslov
-V tem repozitoriju se nahaja projekt, ki ga delamo pri ROM-u.
-Na domačem računalniku spremenimo datoteko.
+# Brezposelnost v članicah Evropske unije
+V tem projektu bomo analizirali podatke o brezposelnosti v članicah Evropske unije od leta 2005 dalje. Podatke bomo pridobili s spletne strani OECD.
