@@ -10,22 +10,22 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     85515,       1974]
-NotebookOptionsPosition[     82373,       1918]
-NotebookOutlinePosition[     82715,       1933]
-CellTagsIndexPosition[     82672,       1930]
+NotebookDataLength[     92964,       2114]
+NotebookOptionsPosition[     89816,       2058]
+NotebookOutlinePosition[     90158,       2073]
+CellTagsIndexPosition[     90115,       2070]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
 Notebook[{
 
 Cell[CellGroupData[{
-Cell["Brezposelnost v dr\[ZHacek]avah OECD", "Title",
+Cell["Brezposdfsfelnost v dr\[ZHacek]avah OECD", "Title",
  CellChangeTimes->{{3.826096239793457*^9, 3.8260962447084227`*^9}, {
   3.8260963362750473`*^9, 3.826096338932252*^9}, {3.826101242908741*^9, 
   3.8261012459088564`*^9}, {3.8261016258052273`*^9, 3.826101650595004*^9}, {
-  3.826699769506157*^9, 
-  3.8266997847769175`*^9}},ExpressionUUID->"74d98a65-406f-4117-9c85-\
+  3.826699769506157*^9, 3.8266997847769175`*^9}, {3.8267925283697834`*^9, 
+  3.8267925287294807`*^9}},ExpressionUUID->"74d98a65-406f-4117-9c85-\
 c6915072935c"],
 
 Cell["\<\
@@ -414,21 +414,20 @@ Cell[BoxData[
 Cell[CellGroupData[{
 
 Cell[BoxData[
- RowBox[{"oecdClanice", "=", 
-  RowBox[{"EntityList", "[", 
-   TemplateBox[{
-    "\"Organization for Economic Cooperation and Development\"",
-     RowBox[{"EntityClass", "[", 
-       RowBox[{
-        "\"Country\"", ",", 
-         "\"OrganizationForEconomicCooperationAndDevelopment\""}], "]"}],
-     "\"EntityClass[\\\"Country\\\", \
+ RowBox[{"EntityList", "[", 
+  TemplateBox[{
+   "\"Organization for Economic Cooperation and Development\"",
+    RowBox[{"EntityClass", "[", 
+      RowBox[{
+       "\"Country\"", ",", 
+        "\"OrganizationForEconomicCooperationAndDevelopment\""}], "]"}],
+    "\"EntityClass[\\\"Country\\\", \
 \\\"OrganizationForEconomicCooperationAndDevelopment\\\"]\"","\"countries\""},
-    "EntityClass"], "]"}]}]], "Input",
+   "EntityClass"], "]"}]], "Input",
  CellChangeTimes->{{3.8267036623939023`*^9, 3.826703669144368*^9}, 
-   3.8267918109000263`*^9},
+   3.8267918109000263`*^9, {3.8267921278755765`*^9, 3.8267921295514817`*^9}},
  NumberMarks->False,
- CellLabel->"In[20]:=",ExpressionUUID->"d2df8aa9-fb90-4e9d-8046-92a6db8573d6"],
+ CellLabel->"In[4]:=",ExpressionUUID->"d2df8aa9-fb90-4e9d-8046-92a6db8573d6"],
 
 Cell[BoxData[
  RowBox[{"{", 
@@ -569,22 +568,163 @@ Cell[BoxData[
        RowBox[{"\"Country\"", ",", "\"UnitedStates\""}], "]"}],
      "\"Entity[\\\"Country\\\", \\\"UnitedStates\\\"]\"","\"country\""},
     "Entity"]}], "}"}]], "Output",
- CellChangeTimes->{3.826703360708371*^9, 3.82670367129957*^9},
- CellLabel->"Out[20]=",ExpressionUUID->"7449003e-ae37-4ff1-a0dd-90fb100d66df"]
+ CellChangeTimes->{3.826703360708371*^9, 3.82670367129957*^9, 
+  3.826792135703439*^9},
+ CellLabel->"Out[4]=",ExpressionUUID->"56949fdc-c43c-4364-b31a-b74ab1aa42be"]
 }, Open  ]],
 
 Cell["\<\
 Seznam dr\[ZHacek]av OECD skupaj z kratico in slovenskim imenom (to tabelo \
-smo morali sestaviti ro\[CHacek]no)\
+smo morali sestaviti ro\[CHacek]no):\
 \>", "Text",
- CellChangeTimes->{{3.8267919038908854`*^9, 
-  3.8267919450644455`*^9}},ExpressionUUID->"8938312c-200a-477d-89f4-\
+ CellChangeTimes->{{3.8267919038908854`*^9, 3.8267919450644455`*^9}, 
+   3.826792109804775*^9},ExpressionUUID->"8938312c-200a-477d-89f4-\
 cd21c56f2fd8"],
 
 Cell[BoxData[
- RowBox[{"seznamOECD", "="}]], "Input",
- CellChangeTimes->{{3.826791898728037*^9, 
-  3.8267919011530094`*^9}},ExpressionUUID->"0a4e1f3e-14de-407a-8efb-\
+ RowBox[{"seznamOECD", "=", 
+  RowBox[{"{", 
+   RowBox[{"{", 
+    RowBox[{
+     TemplateBox[{"\"Australia\"",RowBox[{"Entity", "[", 
+         RowBox[{"\"Country\"", ",", "\"Australia\""}], "]"}],
+       "\"Entity[\\\"Country\\\", \\\"Australia\\\"]\"","\"country\""},
+      "Entity"], ",", 
+     TemplateBox[{"\"Austria\"",RowBox[{"Entity", "[", 
+         RowBox[{"\"Country\"", ",", "\"Austria\""}], "]"}],
+       "\"Entity[\\\"Country\\\", \\\"Austria\\\"]\"","\"country\""},
+      "Entity"], ",", 
+     TemplateBox[{"\"Belgium\"",RowBox[{"Entity", "[", 
+         RowBox[{"\"Country\"", ",", "\"Belgium\""}], "]"}],
+       "\"Entity[\\\"Country\\\", \\\"Belgium\\\"]\"","\"country\""},
+      "Entity"], ",", 
+     TemplateBox[{"\"Canada\"",RowBox[{"Entity", "[", 
+         RowBox[{"\"Country\"", ",", "\"Canada\""}], "]"}],
+       "\"Entity[\\\"Country\\\", \\\"Canada\\\"]\"","\"country\""},
+      "Entity"], ",", 
+     TemplateBox[{"\"Chile\"",RowBox[{"Entity", "[", 
+         RowBox[{"\"Country\"", ",", "\"Chile\""}], "]"}],
+       "\"Entity[\\\"Country\\\", \\\"Chile\\\"]\"","\"country\""},
+      "Entity"], ",", 
+     TemplateBox[{"\"Czech Republic\"",RowBox[{"Entity", "[", 
+         RowBox[{"\"Country\"", ",", "\"CzechRepublic\""}], "]"}],
+       "\"Entity[\\\"Country\\\", \\\"CzechRepublic\\\"]\"","\"country\""},
+      "Entity"], ",", 
+     TemplateBox[{"\"Denmark\"",RowBox[{"Entity", "[", 
+         RowBox[{"\"Country\"", ",", "\"Denmark\""}], "]"}],
+       "\"Entity[\\\"Country\\\", \\\"Denmark\\\"]\"","\"country\""},
+      "Entity"], ",", 
+     TemplateBox[{"\"Estonia\"",RowBox[{"Entity", "[", 
+         RowBox[{"\"Country\"", ",", "\"Estonia\""}], "]"}],
+       "\"Entity[\\\"Country\\\", \\\"Estonia\\\"]\"","\"country\""},
+      "Entity"], ",", 
+     TemplateBox[{"\"Finland\"",RowBox[{"Entity", "[", 
+         RowBox[{"\"Country\"", ",", "\"Finland\""}], "]"}],
+       "\"Entity[\\\"Country\\\", \\\"Finland\\\"]\"","\"country\""},
+      "Entity"], ",", 
+     TemplateBox[{"\"France\"",RowBox[{"Entity", "[", 
+         RowBox[{"\"Country\"", ",", "\"France\""}], "]"}],
+       "\"Entity[\\\"Country\\\", \\\"France\\\"]\"","\"country\""},
+      "Entity"], ",", 
+     TemplateBox[{"\"Germany\"",RowBox[{"Entity", "[", 
+         RowBox[{"\"Country\"", ",", "\"Germany\""}], "]"}],
+       "\"Entity[\\\"Country\\\", \\\"Germany\\\"]\"","\"country\""},
+      "Entity"], ",", 
+     TemplateBox[{"\"Greece\"",RowBox[{"Entity", "[", 
+         RowBox[{"\"Country\"", ",", "\"Greece\""}], "]"}],
+       "\"Entity[\\\"Country\\\", \\\"Greece\\\"]\"","\"country\""},
+      "Entity"], ",", 
+     TemplateBox[{"\"Hungary\"",RowBox[{"Entity", "[", 
+         RowBox[{"\"Country\"", ",", "\"Hungary\""}], "]"}],
+       "\"Entity[\\\"Country\\\", \\\"Hungary\\\"]\"","\"country\""},
+      "Entity"], ",", 
+     TemplateBox[{"\"Iceland\"",RowBox[{"Entity", "[", 
+         RowBox[{"\"Country\"", ",", "\"Iceland\""}], "]"}],
+       "\"Entity[\\\"Country\\\", \\\"Iceland\\\"]\"","\"country\""},
+      "Entity"], ",", 
+     TemplateBox[{"\"Ireland\"",RowBox[{"Entity", "[", 
+         RowBox[{"\"Country\"", ",", "\"Ireland\""}], "]"}],
+       "\"Entity[\\\"Country\\\", \\\"Ireland\\\"]\"","\"country\""},
+      "Entity"], ",", 
+     TemplateBox[{"\"Israel\"",RowBox[{"Entity", "[", 
+         RowBox[{"\"Country\"", ",", "\"Israel\""}], "]"}],
+       "\"Entity[\\\"Country\\\", \\\"Israel\\\"]\"","\"country\""},
+      "Entity"], ",", 
+     TemplateBox[{"\"Italy\"",RowBox[{"Entity", "[", 
+         RowBox[{"\"Country\"", ",", "\"Italy\""}], "]"}],
+       "\"Entity[\\\"Country\\\", \\\"Italy\\\"]\"","\"country\""},
+      "Entity"], ",", 
+     TemplateBox[{"\"Japan\"",RowBox[{"Entity", "[", 
+         RowBox[{"\"Country\"", ",", "\"Japan\""}], "]"}],
+       "\"Entity[\\\"Country\\\", \\\"Japan\\\"]\"","\"country\""},
+      "Entity"], ",", 
+     TemplateBox[{"\"Luxembourg\"",RowBox[{"Entity", "[", 
+         RowBox[{"\"Country\"", ",", "\"Luxembourg\""}], "]"}],
+       "\"Entity[\\\"Country\\\", \\\"Luxembourg\\\"]\"","\"country\""},
+      "Entity"], ",", 
+     TemplateBox[{"\"Mexico\"",RowBox[{"Entity", "[", 
+         RowBox[{"\"Country\"", ",", "\"Mexico\""}], "]"}],
+       "\"Entity[\\\"Country\\\", \\\"Mexico\\\"]\"","\"country\""},
+      "Entity"], ",", 
+     TemplateBox[{"\"Netherlands\"",RowBox[{"Entity", "[", 
+         RowBox[{"\"Country\"", ",", "\"Netherlands\""}], "]"}],
+       "\"Entity[\\\"Country\\\", \\\"Netherlands\\\"]\"","\"country\""},
+      "Entity"], ",", 
+     TemplateBox[{"\"New Zealand\"",RowBox[{"Entity", "[", 
+         RowBox[{"\"Country\"", ",", "\"NewZealand\""}], "]"}],
+       "\"Entity[\\\"Country\\\", \\\"NewZealand\\\"]\"","\"country\""},
+      "Entity"], ",", 
+     TemplateBox[{"\"Norway\"",RowBox[{"Entity", "[", 
+         RowBox[{"\"Country\"", ",", "\"Norway\""}], "]"}],
+       "\"Entity[\\\"Country\\\", \\\"Norway\\\"]\"","\"country\""},
+      "Entity"], ",", 
+     TemplateBox[{"\"Poland\"",RowBox[{"Entity", "[", 
+         RowBox[{"\"Country\"", ",", "\"Poland\""}], "]"}],
+       "\"Entity[\\\"Country\\\", \\\"Poland\\\"]\"","\"country\""},
+      "Entity"], ",", 
+     TemplateBox[{"\"Portugal\"",RowBox[{"Entity", "[", 
+         RowBox[{"\"Country\"", ",", "\"Portugal\""}], "]"}],
+       "\"Entity[\\\"Country\\\", \\\"Portugal\\\"]\"","\"country\""},
+      "Entity"], ",", 
+     TemplateBox[{"\"Slovakia\"",RowBox[{"Entity", "[", 
+         RowBox[{"\"Country\"", ",", "\"Slovakia\""}], "]"}],
+       "\"Entity[\\\"Country\\\", \\\"Slovakia\\\"]\"","\"country\""},
+      "Entity"], ",", 
+     TemplateBox[{"\"Slovenia\"",RowBox[{"Entity", "[", 
+         RowBox[{"\"Country\"", ",", "\"Slovenia\""}], "]"}],
+       "\"Entity[\\\"Country\\\", \\\"Slovenia\\\"]\"","\"country\""},
+      "Entity"], ",", 
+     TemplateBox[{"\"South Korea\"",RowBox[{"Entity", "[", 
+         RowBox[{"\"Country\"", ",", "\"SouthKorea\""}], "]"}],
+       "\"Entity[\\\"Country\\\", \\\"SouthKorea\\\"]\"","\"country\""},
+      "Entity"], ",", 
+     TemplateBox[{"\"Spain\"",RowBox[{"Entity", "[", 
+         RowBox[{"\"Country\"", ",", "\"Spain\""}], "]"}],
+       "\"Entity[\\\"Country\\\", \\\"Spain\\\"]\"","\"country\""},
+      "Entity"], ",", 
+     TemplateBox[{"\"Sweden\"",RowBox[{"Entity", "[", 
+         RowBox[{"\"Country\"", ",", "\"Sweden\""}], "]"}],
+       "\"Entity[\\\"Country\\\", \\\"Sweden\\\"]\"","\"country\""},
+      "Entity"], ",", 
+     TemplateBox[{"\"Switzerland\"",RowBox[{"Entity", "[", 
+         RowBox[{"\"Country\"", ",", "\"Switzerland\""}], "]"}],
+       "\"Entity[\\\"Country\\\", \\\"Switzerland\\\"]\"","\"country\""},
+      "Entity"], ",", 
+     TemplateBox[{"\"Turkey\"",RowBox[{"Entity", "[", 
+         RowBox[{"\"Country\"", ",", "\"Turkey\""}], "]"}],
+       "\"Entity[\\\"Country\\\", \\\"Turkey\\\"]\"","\"country\""},
+      "Entity"], ",", 
+     TemplateBox[{"\"United Kingdom\"",RowBox[{"Entity", "[", 
+         RowBox[{"\"Country\"", ",", "\"UnitedKingdom\""}], "]"}],
+       "\"Entity[\\\"Country\\\", \\\"UnitedKingdom\\\"]\"","\"country\""},
+      "Entity"], ",", 
+     TemplateBox[{"\"United States\"",RowBox[{"Entity", "[", 
+         RowBox[{"\"Country\"", ",", "\"UnitedStates\""}], "]"}],
+       "\"Entity[\\\"Country\\\", \\\"UnitedStates\\\"]\"","\"country\""},
+      "Entity"]}], "}"}]}]}]], "Input",
+ CellChangeTimes->{{3.826791898728037*^9, 3.8267919011530094`*^9}, 
+   3.82679214290814*^9, {3.8267921764168*^9, 
+   3.826792186130745*^9}},ExpressionUUID->"0a4e1f3e-14de-407a-8efb-\
 22c592280004"],
 
 Cell[BoxData[
@@ -1933,47 +2073,47 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[580, 22, 382, 6, 96, "Title",ExpressionUUID->"74d98a65-406f-4117-9c85-c6915072935c"],
-Cell[965, 30, 426, 8, 34, "Text",ExpressionUUID->"b9099e98-4abe-4ce9-806d-e7d63b02f713"],
+Cell[580, 22, 436, 6, 96, "Title",ExpressionUUID->"74d98a65-406f-4117-9c85-c6915072935c"],
+Cell[1019, 30, 426, 8, 34, "Text",ExpressionUUID->"b9099e98-4abe-4ce9-806d-e7d63b02f713"],
 Cell[CellGroupData[{
-Cell[1416, 42, 524, 11, 28, "Input",ExpressionUUID->"d16bca10-e631-43c2-ad9c-2d1cd1907d6f"],
-Cell[1943, 55, 12410, 307, 150, "Output",ExpressionUUID->"40e62fd9-5258-4b99-9860-7b3081d57a57"]
+Cell[1470, 42, 524, 11, 28, "Input",ExpressionUUID->"d16bca10-e631-43c2-ad9c-2d1cd1907d6f"],
+Cell[1997, 55, 12410, 307, 150, "Output",ExpressionUUID->"40e62fd9-5258-4b99-9860-7b3081d57a57"]
 }, Open  ]],
-Cell[14368, 365, 399, 6, 34, "Text",ExpressionUUID->"40cebf42-c81f-4fcd-9fba-28e38d32dd33"],
+Cell[14422, 365, 399, 6, 34, "Text",ExpressionUUID->"40cebf42-c81f-4fcd-9fba-28e38d32dd33"],
 Cell[CellGroupData[{
-Cell[14792, 375, 560, 13, 28, "Input",ExpressionUUID->"fe137781-9c08-419d-b1e2-54e8e680fda4"],
-Cell[15355, 390, 1249, 20, 32, "Output",ExpressionUUID->"a02afb70-547c-455f-b640-649d8b228582"]
+Cell[14846, 375, 560, 13, 28, "Input",ExpressionUUID->"fe137781-9c08-419d-b1e2-54e8e680fda4"],
+Cell[15409, 390, 1249, 20, 32, "Output",ExpressionUUID->"a02afb70-547c-455f-b640-649d8b228582"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[16641, 415, 661, 15, 42, "Input",ExpressionUUID->"d2df8aa9-fb90-4e9d-8046-92a6db8573d6"],
-Cell[17305, 432, 7134, 140, 80, "Output",ExpressionUUID->"7449003e-ae37-4ff1-a0dd-90fb100d66df"]
+Cell[16695, 415, 669, 14, 42, "Input",ExpressionUUID->"d2df8aa9-fb90-4e9d-8046-92a6db8573d6"],
+Cell[17367, 431, 7158, 141, 80, "Output",ExpressionUUID->"56949fdc-c43c-4364-b31a-b74ab1aa42be"]
 }, Open  ]],
-Cell[24454, 575, 266, 6, 34, "Text",ExpressionUUID->"8938312c-200a-477d-89f4-cd21c56f2fd8"],
-Cell[24723, 583, 181, 4, 28, "Input",ExpressionUUID->"0a4e1f3e-14de-407a-8efb-22c592280004"],
-Cell[24907, 589, 1668, 28, 67, "Input",ExpressionUUID->"3b217f1b-9b76-4a40-ad96-8c9a8fb0eac5"],
-Cell[26578, 619, 298, 4, 34, "Text",ExpressionUUID->"774e2dbe-b481-4374-bcd3-7ff06b44c1ba"],
-Cell[26879, 625, 999, 18, 48, "Input",ExpressionUUID->"8116e54c-7dc3-48ee-b429-35ec2d006de0"],
+Cell[24540, 575, 290, 6, 34, "Text",ExpressionUUID->"8938312c-200a-477d-89f4-cd21c56f2fd8"],
+Cell[24833, 583, 7514, 144, 109, "Input",ExpressionUUID->"0a4e1f3e-14de-407a-8efb-22c592280004"],
+Cell[32350, 729, 1668, 28, 67, "Input",ExpressionUUID->"3b217f1b-9b76-4a40-ad96-8c9a8fb0eac5"],
+Cell[34021, 759, 298, 4, 34, "Text",ExpressionUUID->"774e2dbe-b481-4374-bcd3-7ff06b44c1ba"],
+Cell[34322, 765, 999, 18, 48, "Input",ExpressionUUID->"8116e54c-7dc3-48ee-b429-35ec2d006de0"],
 Cell[CellGroupData[{
-Cell[27903, 647, 666, 15, 28, "Input",ExpressionUUID->"fd7239ef-ed15-42f8-a774-ef177bf43f5b"],
-Cell[28572, 664, 8708, 175, 113, "Output",ExpressionUUID->"f61af652-8bcc-42c8-a79a-cac09cf947de"]
+Cell[35346, 787, 666, 15, 28, "Input",ExpressionUUID->"fd7239ef-ed15-42f8-a774-ef177bf43f5b"],
+Cell[36015, 804, 8708, 175, 113, "Output",ExpressionUUID->"f61af652-8bcc-42c8-a79a-cac09cf947de"]
 }, Open  ]],
-Cell[37295, 842, 397, 8, 34, "Text",ExpressionUUID->"d053e4c8-a6b4-4e08-8b02-4a194f0d64aa"],
+Cell[44738, 982, 397, 8, 34, "Text",ExpressionUUID->"d053e4c8-a6b4-4e08-8b02-4a194f0d64aa"],
 Cell[CellGroupData[{
-Cell[37717, 854, 603, 16, 28, "Input",ExpressionUUID->"24a82b9f-7a26-4d3f-bd32-cd07b0b2dbac"],
-Cell[38323, 872, 12969, 335, 150, "Output",ExpressionUUID->"9e3f09d4-ce72-4e71-88f0-d781a11efeee"]
+Cell[45160, 994, 603, 16, 28, "Input",ExpressionUUID->"24a82b9f-7a26-4d3f-bd32-cd07b0b2dbac"],
+Cell[45766, 1012, 12969, 335, 150, "Output",ExpressionUUID->"9e3f09d4-ce72-4e71-88f0-d781a11efeee"]
 }, Open  ]],
-Cell[51307, 1210, 531, 10, 34, "Text",ExpressionUUID->"4ac14cf8-9a77-4961-b18d-377bfe75d45e"],
-Cell[51841, 1222, 1551, 43, 48, "Input",ExpressionUUID->"e5a4c3e2-c228-4a4e-9ba5-f4c95e55d8e3"],
+Cell[58750, 1350, 531, 10, 34, "Text",ExpressionUUID->"4ac14cf8-9a77-4961-b18d-377bfe75d45e"],
+Cell[59284, 1362, 1551, 43, 48, "Input",ExpressionUUID->"e5a4c3e2-c228-4a4e-9ba5-f4c95e55d8e3"],
 Cell[CellGroupData[{
-Cell[53417, 1269, 608, 10, 42, "Input",ExpressionUUID->"71c88521-d401-4da7-a618-808a73a1957f"],
-Cell[54028, 1281, 1972, 54, 71, "Output",ExpressionUUID->"253a4126-130d-45ab-b3c9-bff15074bc61"]
+Cell[60860, 1409, 608, 10, 42, "Input",ExpressionUUID->"71c88521-d401-4da7-a618-808a73a1957f"],
+Cell[61471, 1421, 1972, 54, 71, "Output",ExpressionUUID->"253a4126-130d-45ab-b3c9-bff15074bc61"]
 }, Open  ]],
-Cell[56015, 1338, 216, 4, 34, "Text",ExpressionUUID->"94258862-ef85-4dad-9caf-1c5e6cbb98b6"],
-Cell[56234, 1344, 2700, 57, 67, "Input",ExpressionUUID->"3caeb29d-953d-49bf-8350-696b7a4d9d62"],
+Cell[63458, 1478, 216, 4, 34, "Text",ExpressionUUID->"94258862-ef85-4dad-9caf-1c5e6cbb98b6"],
+Cell[63677, 1484, 2700, 57, 67, "Input",ExpressionUUID->"3caeb29d-953d-49bf-8350-696b7a4d9d62"],
 Cell[CellGroupData[{
-Cell[58959, 1405, 1490, 28, 76, "Input",ExpressionUUID->"cdce52dd-29fd-4a03-85f9-24349c0210e9"],
-Cell[60452, 1435, 2650, 64, 390, "Output",ExpressionUUID->"d5d26775-41a3-4d54-8e65-84a540708e81"],
-Cell[63105, 1501, 19240, 413, 397, "Output",ExpressionUUID->"55990063-36be-4412-b3f4-44aff5e7f444"]
+Cell[66402, 1545, 1490, 28, 76, "Input",ExpressionUUID->"cdce52dd-29fd-4a03-85f9-24349c0210e9"],
+Cell[67895, 1575, 2650, 64, 390, "Output",ExpressionUUID->"d5d26775-41a3-4d54-8e65-84a540708e81"],
+Cell[70548, 1641, 19240, 413, 397, "Output",ExpressionUUID->"55990063-36be-4412-b3f4-44aff5e7f444"]
 }, Open  ]]
 }, Open  ]]
 }
